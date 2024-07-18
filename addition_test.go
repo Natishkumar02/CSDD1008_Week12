@@ -2,22 +2,25 @@ package main
 
 import "testing"
 
-func TestAddition(t *testing.T) {
-	testCases := []struct {
-		a, b     int
-		expected int
-	}{
-		{2, 4, 6},
-		{2, 54, 56},
-		{1, 0, 1},
-		{6, -2, 4},
-		{-2, -2, -4},
-	}
+// TestFactorial tests the Factorial function with various input cases.
+func TestFactorial(t *testing.T) {
+    testCases := []struct {
+        n        int
+        expected int
+    }{
+        {0, 1},
+        {1, 1},
+        {2, 2},
+        {3, 6},
+        {4, 24},
+        {5, 120},
+        {-1, -1},
+    }
 
-	for _, tc := range testCases {
-		result := Addition(tc.a, tc.b)
-		if result != tc.expected {
-			t.Errorf("Addition(%d, %d) = %d; expected %d", tc.a, tc.b, result, tc.expected)
-		}
-	}
+    for _, tc := range testCases {
+        result := Factorial(tc.n)
+        if result != tc.expected {
+            t.Errorf("Factorial(%d) = %d; expected %d", tc.n, result, tc.expected)
+        }
+    }
 }
