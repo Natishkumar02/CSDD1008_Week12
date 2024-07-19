@@ -1,12 +1,22 @@
 package main
 
-func Factorial(n int) int {
-	if n < 0 {
-		return -1
+import (
+	"fmt"
+	"strings"
+)
+
+func CountVowels(s string) int {
+	vowels := "aeiouAEIOU"
+	count := 0
+	for _, char := range s {
+		if strings.ContainsRune(vowels, char) {
+			count++
+		}
 	}
-	result := 1
-	for i := 1; i <= n; i++ {
-		result *= i
-	}
-	return result
+	return count
+}
+
+func main() {
+	s := "Hello, World!"
+	fmt.Printf("Number of vowels in '%s' is %d\n", s, CountVowels(s))
 }
