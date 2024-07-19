@@ -6,12 +6,12 @@
 
 # Go Addition Function with Tests
 
-This repository contains a simple Go program that performs addition and includes tests to verify its functionality.
+This repository contains a simple Go program that performs Count vowels and includes tests to verify its functionality.
 
 ## Files
 
-- `addition.go`: Contains the `Addition` function and the main program.
-- `addition_test.go`: Contains the tests for the `Addition` function.
+-main.go`: Contains the `Count vowels` function and the main program.
+- `count_vowels_test.go`: Contains the tests for the `vowels` function.
 
 
 | Natish Kumar   | 500235460   |
