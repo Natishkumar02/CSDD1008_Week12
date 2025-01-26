@@ -4,7 +4,7 @@
 
 | Instructor  | Maziar Sojoudian  |
 
-# Go Addition Function with Tests
+# Go CountVowel Function with Tests
 
 This repository contains a simple Go program that performs Count vowels and includes tests to verify its functionality.
 
